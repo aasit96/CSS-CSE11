@@ -1,11 +1,11 @@
-.container{
+/* .container{
     display: flex;
     height: 600px;
     width: 1500px;
     background-color: aqua;
-    border: 1px solid black;
+    border: 1px solid black; */
     /* flex-direction: row-reverse; */
-    flex-wrap:wrap ;
+    /* flex-wrap:wrap ;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -23,4 +23,107 @@
     flex-grow: 2;
     align-self: flex-end;
     
+} */
+ /* .container{
+    display: grid;
+    height: 500px;
+    width: 1000px;
+    background-color: aqua;
+    border: 1px solid black;
+    grid-template-columns: repeat(4,100px) ;
+    grid-template-rows: repeat(3,100px);
+     /* grid-template-areas: "header header header header" "main main . sidebar" 
+     "footer footer footer footer"; */
+     /* column-gap: 10px;
+     row-gap: 15px;
+     justify-items: center;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
+
+     
+
+ }
+ .item{
+    height: 100px;
+    width: 100px;
+    background-color: brown; */
+     
+   
+ 
+ /* .item1{
+    grid-area: header;
+ }
+ .item2{
+    grid-area: main;
+ }
+ .item3{
+    grid-area: sidebar;
+
+ }
+ .item4{
+    grid-area: footer;
+ } */
+  /* @media(max-width 768px)
+.box{
+   background-color: aqua;
+
 }
+  li{
+   list-style-type: none;
+  }
+  nav ul{
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+  }
+   
+   */
+   body{
+      margin: 0;
+      font-family:  arial,sans-serif;
+   }
+   nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: black;
+      padding: 1rem;
+   }
+   .logo{
+      color: #fff;
+      font-size: 1.5rem;
+   }
+   .menu{
+      display: none;
+      flex-direction: column;
+      background: #444;
+      position:absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+   }
+   .menu a{
+      color: #fff;
+      padding: 1em;
+      text-decoration: none;
+      display: block;
+   }
+   .hamburger{
+      font-size: 2rem;
+      color:#fff;
+    cursor: pointer;
+   }
+   @media(min-width:768px){
+      .menu{
+         display: flex;
+         flex-direction: row;
+         position: static;
+         background-color: none;
+         width: auto;
+      }
+      .hamburger{
+         display: none;
+      }
+   }
+
